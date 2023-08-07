@@ -35,7 +35,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
+  buildModules: [ '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -47,5 +47,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['vue-star-rating']
+  },
+  googleAnalytics: {
+    id: 'G-D59Z2EJXEZ',
+    sendHitTask:true
   }
 }
