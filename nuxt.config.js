@@ -12,7 +12,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",
+          async: true,
+      },
+      {
+          src: "js/ga.js",
+      }
+  ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,7 +44,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [ '@nuxtjs/google-analytics'
+  buildModules: [
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,8 +57,4 @@ export default {
   build: {
     transpile: ['vue-star-rating']
   },
-  googleAnalytics: {
-    id: 'G-D59Z2EJXEZ',
-    sendHitTask:true
-  }
 }
