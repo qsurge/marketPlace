@@ -1,5 +1,5 @@
 {
-  "name": "Client",
+  "name": "client",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
@@ -18,12 +19,12 @@
     "vue-js-modal": "^2.0.0-rc.6",
     "vue-star-rating": "^1.7.0"
   },
-  
   "devDependencies": {
     "@vue/test-utils": "^1.1.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
+    "push-dir": "^0.4.1",
     "vue-jest": "^3.0.4"
   }
 }
